@@ -1,8 +1,7 @@
-```md
 # 🚮 SmartTrash IoT System
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:003973,100:000000&text=SMARTTRASH%20IoT&fontColor=ffffff&fontSize=65&fontAlignY=40&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:001f3f,100:001020&text=SMARTTRASH%20IoT&fontColor=ffffff&fontSize=55&fontAlignY=40&animation=fadeIn" />
 </p>
 
 <p align="center">
@@ -11,88 +10,104 @@
 
 ---
 
-# 🌑 Smart Waste Management Powered by IoT  
-Modern • Automated • Efficient • Real-Time Monitoring
+## 🌑 Smart Waste Management Powered by IoT
 
-SmartTrash adalah sistem IoT modern untuk memantau kapasitas tempat sampah secara otomatis menggunakan sensor ultrasonik, mikrokontroler, dan koneksi cloud. Sistem ini dibangun untuk mewujudkan konsep **Smart City** yang efisien, hemat energi, dan responsif.
+<p align="center"><i>Modern • Automated • Efficient • Real-Time Monitoring</i></p>
 
 ---
 
-# ✨ Key Features
+# ✨ What Makes SmartTrash Different?
 
-- 🚨 **Real-time Monitoring** kapasitas sampah  
-- 📡 **Pengiriman data via WiFi** ke Cloud  
-- 🔥 **Firebase Realtime / Thinger.io** Integration  
-- 🔔 **Automated WhatsApp Alert** saat penuh  
-- ⚙️ Mode **Otomatis & Manual**  
-- 🧠 Mudah di-scale untuk Smart City Infrastructure  
-- 🌐 Dapat dipadukan dengan Dashboard Analytics  
+<p align="center">
+  <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="400">
+</p>
+
+SmartTrash adalah solusi IoT generasi baru yang menggabungkan:
+
+✔ Sensor cerdas
+✔ Automasi real-time
+✔ Notifikasi langsung
+✔ Cloud-connected system
+✔ Desain scalable untuk Smart City
+
+---
+
+# 🚀 Features
+
+### 🎯 Core Intelligence
+
+* 🚨 Real-time Monitoring mendeteksi tinggi sampah secara akurat
+* 🤖 Smart Decision System untuk membuka & menutup tutup otomatis
+* 🔋 Optimasi daya untuk pemakaian jangka panjang
+
+### 🌐 Connectivity
+
+* 📡 Pengiriman data melalui WiFi ke Cloud
+* ☁️ Mendukung Firebase, MQTT, dan Thinger.io
+* 🔔 WhatsApp Alert saat sampah penuh
+
+### 🛠️ Flexibility
+
+* ⚙️ Mode manual & otomatis
+* 🔧 Mudah integrasi ke API Smart City
+* 🧩 Mudah dikembangkan ulang
 
 ---
 
 # 🎬 System Animation
+
 <p align="center">
-  <img src="https://media.giphy.com/media/H7wajFPnZGdRWaQeu0/giphy.gif" width="540">
+  <img src="https://media.giphy.com/media/H7wajFPnZGdRWaQeu0/giphy.gif" width="600">
 </p>
 
 ---
 
 # 🧩 Tech Stack
 
-| Layer | Teknologi |
-|-------|-----------|
-| **Hardware** | ESP8266 / ESP32, HC-SR04, Servo Motor |
-| **Firmware** | Arduino IDE / PlatformIO |
-| **Cloud** | Firebase, MQTT, Thinger.io |
-| **Frontend** | HTML, CSS, JavaScript |
-| **Notification** | WhatsApp Gateway |
+| Layer            | Teknologi                             |
+| ---------------- | ------------------------------------- |
+| **Hardware**     | ESP8266 / ESP32, HC-SR04, Servo Motor |
+| **Firmware**     | Arduino IDE / PlatformIO              |
+| **Cloud**        | Firebase, MQTT, Thinger.io            |
+| **Frontend**     | HTML, CSS, JavaScript                 |
+| **Notification** | WhatsApp API Gateway                  |
 
 ---
 
 # 🗂️ Project Structure
+
 ```
-
-📁 IoT-SmartTrash
-├── SmartTrash/        # Firmware utama (ESP8266/ESP32)
-├── Firebase_Smart/    # Setup Firebase
-├── Thinger.io/        # Integrasi IoT Cloud
-├── WANotif/           # WhatsApp Notification Service
-├── firebasecode/      # API + Aturan Firebase
-├── tutupmanual/       # Mode kontrol manual
-└── MITT/              # Modul tambahan
-
+📁 IoT-SmartTrash  
+├── SmartTrash/          # Firmware utama (ESP8266/ESP32)  
+├── Firebase_Smart/      # Setup Firebase  
+├── Thinger.io/          # Integrasi IoT cloud  
+├── WANotif/             # WhatsApp notification system  
+├── firebasecode/        # API Rules & konfigurasi Firebase  
+├── tutupmanual/         # Mode kontrol manual  
+└── MITT/                # Modul tambahan
 ```
 
 ---
 
-# 🧠 System Architecture (Extended Diagram)
+# 🧠 System Architecture (Interactive View)
 
 ```
-
-```
-             ┌──────────────────────────┐
-             │      HC-SR04 Sensor      │
-             └────────────┬─────────────┘
-                          │ distance
-                          │
-             ┌────────────▼────────────┐
-             │      ESP8266/ESP32      │
-             │  logic + automation      │
-             └────────────┬────────────┘
-                          │ WiFi
-                          │
-    ┌─────────────────────▼─────────────────────┐
-    │           IoT Cloud Platform              │
-    │   Firebase / MQTT Broker / Thinger.io     │
-    └────────────┬──────────────────────────────┘
-                  │ triggers
-                  │
-    ┌─────────────▼──────────────┐     ┌────────────────────────┐
-    │ Real-time Web Dashboard     │     │ WhatsApp Notification  │
-    │ Charts • Logs • Control     │     │ Auto-alert system      │
-    └─────────────────────────────┘     └────────────────────────┘
-```
-
+                 ┌──────────────────────────┐
+                 │      HC-SR04 Sensor      │
+                 └────────────┬─────────────┘
+                              │ distance
+                 ┌────────────▼────────────┐
+                 │      ESP8266/ESP32      │
+                 └────────────┬────────────┘
+                              │ WiFi
+                 ┌────────────▼────────────┐
+                 │     IoT Cloud Server    │
+                 │ Firebase / MQTT / API   │
+                 └────────────┬────────────┘
+                              │ event
+        ┌─────────────────────▼─────────────────────┐
+        │     Dashboard Web / WhatsApp Alert        │
+        └───────────────────────────────────────────┘
 ```
 
 <p align="center">
@@ -103,53 +118,55 @@ SmartTrash adalah sistem IoT modern untuk memantau kapasitas tempat sampah secar
 
 # ⚙️ Installation Guide
 
-### **1️⃣ Clone Repository**
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/WildanFadillah1512/IoT-SmartTrash.git
 ```
 
-git clone [https://github.com/WildanFadillah1512/IoT-SmartTrash.git](https://github.com/WildanFadillah1512/IoT-SmartTrash.git)
+### 2️⃣ Setup Firmware
 
-```
+* Masuk ke folder: **SmartTrash/**
+* Edit SSID & Password WiFi
+* Upload ke ESP8266/ESP32 via Arduino IDE
 
-### **2️⃣ Upload Firmware**
-- Buka folder: `SmartTrash/`  
-- Edit SSID & Password WiFi  
-- Upload menggunakan Arduino IDE  
+### 3️⃣ Setup Cloud
 
-### **3️⃣ Setup Firebase / MQTT**
-- Import file pada folder `Firebase_Smart/`  
-- Masukkan API key ke firmware  
+* Import Firebase config dari **Firebase_Smart/**
+* Masukkan API key ke firmware
 
-### **4️⃣ Aktifkan WhatsApp Alert**
-- Konfigurasi gateway pada folder `WANotif/`  
+### 4️⃣ WhatsApp Notification
+
+* Konfigurasikan gateway di **WANotif/**
 
 ---
 
 # 🔮 Future Enhancements
-- 🤖 AI-based Trash Classification (Vision Model)  
-- ☀️ Solar-powered IoT Energy System  
-- 🚛 Real-time GPS tracking untuk truk sampah  
-- 🌐 Smart City REST API (Open Data Format)  
-- 📊 Dashboard analytics dengan grafik interaktif  
-- 🔋 Power-efficient mode (Deep Sleep Optimization)  
+
+* 🤖 AI-based trash type classification
+* ☀️ Solar-powered autonomous system
+* 🚛 GPS tracking untuk armada pengangkut
+* 🌐 Integrasi penuh Smart City API
+* 📊 Dashboard analytics dengan visualisasi real-time
 
 ---
 
 # 🏅 Badges
+
 <p align="center">
-  <img src="https://img.shields.io/badge/IoT-SmartTrash-003973?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Firebase-Integrated-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/ESP8266/32-Supported-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Made%20By-WildanFadillah1512-00b894?style=for-the-badge">
+  <img src="https://img.shields.io/badge/IoT-SmartTrash-001f3f?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Firebase-Connected-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/ESP8266/ESP32-Ready-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Developed%20By-WildanFadillah1512-00c896?style=for-the-badge">
 </p>
 
 ---
 
 # 👤 Author
-**Wildan Fadillah**  
-🔗 GitHub: https://github.com/WildanFadillah1512
+
+**Wildan Fadillah**
+[https://github.com/WildanFadillah1512](https://github.com/WildanFadillah1512)
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:000000,100:003973&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:001020,100:001f3f&section=footer" />
 </p>
-```
-
