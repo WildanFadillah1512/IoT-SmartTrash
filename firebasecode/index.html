@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Trash Bin Monitoring</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📡 SMART TRASH BIN MONITORING</h1>
+      <h2>Group 4 - IoT Project</h2>
+      <h3>By: Wildan Fadillah</h3>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">🗑️</div>
+        <h2>Jarak ke Sensor</h2>
+        <p id="jarakSensor">-- cm</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h2>Jarak Buka Tutup</h2>
+        <p id="jarakTutup">-- cm</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">%</div>
+        <h2>Persen Penuh</h2>
+        <p id="persenPenuh">-- %</p>
+        <div class="progress-bar">
+          <div class="fill" id="progressBar" style="width: 0%"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🗑️</div>
+        <h2>Status Penuh</h2>
+        <p id="statusPenuh" class="status-red">Belum</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🗑️</div>
+        <h2>Status Penuh</h2>
+        <p id="statusPenuh2">Belum</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h2>Status Tutup</h2>
+        <p id="statusTutup" class="status-green">Tertutup</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
