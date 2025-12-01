@@ -1,126 +1,114 @@
-# 🚮 **SMARTTRASH IoT — ULTRA PREMIUM EDITION**
+# 🚮 **SMARTTRASH IoT — POWERFULL PROJECT EDITION**
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=180&color=0:000000,100:001f3f&text=SMARTTRASH%20%7C%20ULTRA%20PREMIUM%20IoT%20SYSTEM&fontColor=00eaff&fontAlignY=45&fontSize=45&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=180&color=0:000000,100:003366&text=SMARTTRASH%20IoT%20SYSTEM&fontColor=38e0ff&fontAlignY=45&fontSize=45&animation=fadeIn" />
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="350">
-</p>
-
----
-
-# 🌌 **Next-Generation Smart Waste Ecosystem**
-
-<p align="center"><i>Designed for the Future. Engineered for Smart Cities.</i></p>
-
-SmartTrash Ultra-Premium Edition menghadirkan teknologi IoT modern dengan estetika futuristik, arsitektur cloud berpresisi tinggi, dan visual yang dirancang seperti produk Silicon Valley.
-
-Dibangun dengan mindset: **“Tidak hanya berfungsi, tapi harus indah, efisien, dan visioner.”**
-
----
-
-# ✨ **Flagship Features — Beyond Ordinary**
-
-### 🛰️ **Quantum-Level Sensing**
-
-* Ultra-accurate waste depth detection
-* Adaptive calibration & smart self-correction
-* Response time super cepat
-
-### 🌐 **HyperConnected Cloud System**
-
-* Multi-protocol: Firebase | MQTT | Thinger.io
-* Auto-switch backup channel (FailSafe Mode)
-* Enkripsi data tingkat enterprise
-
-### 🤖 **AI-Powered Extensions (Ready)**
-
-* AI Trash Classification (Future-ready)
-* Predictive analytics: kapan sampah penuh?
-* Machine learning untuk kebiasaan area
-
-### ⚡ **Neural Automation Module**
-
-* Tutup otomatis dengan kontrol presisi
-* Motion-adaptive movement
-* Manual override mode (failsafe)
-
-### 🔔 **Premium Notification System**
-
-* WhatsApp SmartAlert v2.0
-* Auto-report
-* Integrasi dashboard
-
-<p align="center">
-  <img src="https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif" width="420">
+  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="340">
 </p>
 
 ---
 
-# 🎞️ **Cinematic Animation Preview**
+# 🌍 **SmartTrash — Project Resmi Sistem Tempat Sampah Pintar Berbasis IoT**
+
+SmartTrash adalah sistem IoT lengkap yang **benar-benar bekerja** sesuai implementasi di project kamu: membaca kapasitas sampah, mengontrol tutup otomatis, mengirimkan data ke Firebase/Thinger.io, dan memberikan notifikasi WhatsApp. Dokumentasi ini dibangun khusus untuk menggambarkan struktur projekmu, cara kerja kode, dan keseluruhan arsitektur dengan desain **powerful, bersih, dan modern**.
+
+---
+
+# ⚡ **Fitur Utama Sistem Sesuai Projek Asli**
+
+### 🧭 **Monitoring Kapasitas Otomatis**
+
+* Menggunakan sensor ultrasonik HC-SR04
+* Mengukur jarak sampah → menentukan status: *Kosong, Setengah, Penuh*
+
+### 🚪 **Kontrol Tutup Otomatis**
+
+* Servo motor membuka & menutup berdasarkan jarak
+* Mode manual tersedia di folder `tutupmanual/`
+
+### 📡 **Pengiriman Data ke Cloud**
+
+* Firebase Realtime Database (folder `Firebase_Smart/`)
+* Thinger.io IoT Cloud (folder `Thinger.io/`)
+* Data dikirim dari ESP8266/ESP32
+
+### 🔔 **WhatsApp Auto Notification**
+
+* Folder `WANotif/` berisi script WA alert
+* Mengirim pesan jika sampah mencapai level tertentu
+
+### 🔄 **Integrasi Modul Tambahan**
+
+* Folder `MITT/` berisi modul eksperimen
+
+---
+
+# 🎞️ **Visualisasi Cara Kerja Sistem**
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="650">
+  <img src="https://media.giphy.com/media/26BoCIZm8H0Lz1Xvy/giphy.gif" width="650">
 </p>
 
 ---
 
-# 🧩 **Ultra Tech Stack**
+# 🧩 **Tech Stack yang Benar-benar Dipakai di Projek Ini**
 
-| Layer           | Teknologi                                                  |
-| --------------- | ---------------------------------------------------------- |
-| 💠 Hardware     | ESP8266 / ESP32 Elite, HC-SR04 Platinum, High-Torque Servo |
-| 💠 Firmware     | Arduino Pro Mode, PlatformIO HyperBuild                    |
-| 💠 Cloud        | Firebase Realtime DB, MQTT Broker, Thinger.io Cloud Mesh   |
-| 💠 Frontend     | HyperUI (HTML+CSS+JS Futuristic Kit)                       |
-| 💠 Notification | WhatsApp Cloud Automation Engine                           |
+| Layer            | Teknologi                             |
+| ---------------- | ------------------------------------- |
+| **Hardware**     | ESP8266 / ESP32, HC-SR04, Servo SG90  |
+| **Firmware**     | Arduino IDE, C++ Microcontroller Code |
+| **Cloud**        | Firebase, Thinger.io                  |
+| **Notification** | WhatsApp Gateway (Python/Node)        |
+| **Frontend**     | Dashboard sederhana (opsional)        |
 
 ---
 
-# 🗂️ **Project Structure — Clean & Modular**
+# 🗂️ **Struktur Projek Asli (Disesuaikan dari Repo Kamu)**
 
 ```
-IoT-SmartTrash ULTRA
-├── SmartTrash/           # Core firmware
-├── Firebase_Smart/       # Firebase cloud system
-├── Thinger.io/           # IoT cloud platform
-├── WANotif/              # WhatsApp Ultra Notifier
-├── firebasecode/         # Cloud API rules
-├── tutupmanual/          # Manual override module
-└── MITT/                 # Advanced module pack
+IoT-SmartTrash
+├── SmartTrash/          # Firmware utama: sensor, servo, WiFi, cloud
+├── Firebase_Smart/      # Setup Firebase + rules
+├── Thinger.io/          # Setting device & bucket Thinger.io
+├── WANotif/             # WhatsApp Notification Script
+├── firebasecode/        # Source config + penyimpanan data
+├── tutupmanual/         # Mode tutup manual via tombol
+└── MITT/                # Modul opsional / fitur eksperimen
 ```
 
 ---
 
-# 🧠 **Neo-Futuristic Architecture Map**
+# 🧠 **Arsitektur Sistem Sesuai Cara Kerja Nyata**
 
 ```
-                   ┌───────────────────────────┐
-                   │  ULTRA SONIC SENSOR PRO   │
-                   └──────────────┬────────────┘
-                                  │ DATA STREAM
-                       ┌──────────▼───────────┐
-                       │   ESP8266/ESP32 ELITE │
-                       └──────────┬───────────┘
-                                  │ SECURE WiFi
-                     ┌────────────▼────────────┐
-                     │     SMART CLOUD CORE     │
-                     │ Firebase | MQTT | API AI │
-                     └────────────┬────────────┘
-                                  │ EVENTS
-         ┌────────────────────────▼─────────────────────────┐
-         │      DASHBOARD | MOBILE ALERT | AI ENGINE        │
-         └───────────────────────────────────────────────────┘
+                ╔══════════════════════╗
+                ║   Sensor HC-SR04     ║
+                ╚═══════╦══════════════╝
+                        │ Jarak Sampah
+                ╔═══════▼══════════════╗
+                ║   ESP8266 / ESP32    ║
+                ║  (Firmware di repo)  ║
+                ╚═══════╦══════════════╝
+        WiFi Data       │ Kontrol Servo
+                ╔═══════▼══════════════╗
+                ║     Cloud System     ║
+                ║ Firebase | Thinger.io ║
+                ╚═══════╦══════════════╝
+                        │ Status Sampah
+       ╔════════════════▼═════════════════╗
+       ║   Dashboard / WhatsApp Alert     ║
+       ╚══════════════════════════════════╝
 ```
 
 <p align="center">
-  <img src="https://media.giphy.com/media/5ndklThG9vUUdTmgMn/giphy.gif" width="440">
+  <img src="https://media.giphy.com/media/LMcB8XospGZO8UQq87/giphy.gif" width="430">
 </p>
 
 ---
 
-# ⚙️ **Installation — Premium Setup Guide**
+# ⚙️ **Cara Instalasi & Menjalankan Sistem**
 
 ### 1️⃣ Clone Repository
 
@@ -128,40 +116,49 @@ IoT-SmartTrash ULTRA
 git clone https://github.com/WildanFadillah1512/IoT-SmartTrash.git
 ```
 
-### 2️⃣ Firmware Ultra Mode
+### 2️⃣ Upload Kode ESP
 
-* Buka folder **SmartTrash/**
-* Edit SSID, Password
-* Upload via Arduino IDE / PlatformIO
+Masuk folder **SmartTrash/**
 
-### 3️⃣ Cloud Setup
+* Edit SSID & PASSWORD WiFi
+* Pilih board ESP8266/ESP32
+* Upload melalui Arduino IDE
 
-* Import config Firebase
-* Masukkan API Key
+### 3️⃣ Setup Firebase
 
-### 4️⃣ Activate WhatsApp UltraNotifier
+* Masuk folder `Firebase_Smart/`
+* Ikuti petunjuk setup JSON & rules
+* Masukkan API Key ke firmware
 
-* Konfigurasi folder **WANotif/**
+### 4️⃣ Setup Thinger.io (Opsional)
 
----
+* Folder `Thinger.io/` berisi konfigurasi device + bucket
 
-# 🔮 **Future Ultra-Upgrades**
+### 5️⃣ Aktivasi WhatsApp Notification
 
-* Neural-classification AI
-* Solar-Autonomy 24/7
-* Advanced Eco-Analytics dashboard
-* SmartCity API v3 Integration
-* GPS fleet monitoring
+* Jalankan script di folder `WANotif/`
+* Sesuaikan nomor penerima
 
 ---
 
-# 🏅 **Premium Badges**
+# 🔮 **Future Upgrade Kemungkinan di Projek Kamu**
+
+* AI detection untuk klasifikasi sampah
+* Solar panel untuk power mandiri
+* Dashboard monitoring versi mobile
+* Statistik timbulan sampah
+* API ke sistem Smart City
+
+---
+
+# 🏅 **Project Badges**
 
 <p align="center">
-  <img src="https://img.shields.io/badge/IoT-SMARTTRASH%20ULTRA-001f3f?style=for-the-badge&logo=semantic-web">
-  <img src="https://img.shields.io/badge/Firebase-PRO%20Cloud-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/ESP32-ELITE%20SERIES-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/WildanFadillah1512-PREMIUM%20CREATOR-00eaff?style=for-the-badge">
+  <img src="https://img.shields.io/badge/SmartTrash-IoT%20Project-003366?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Firebase-Connected-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Thinger.io-Integrated-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Servo-Automation-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/WildanFadillah1512-Developer-00eaff?style=for-the-badge">
 </p>
 
 ---
@@ -172,5 +169,5 @@ git clone https://github.com/WildanFadillah1512/IoT-SmartTrash.git
 [https://github.com/WildanFadillah1512](https://github.com/WildanFadillah1512)
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=140&color=0:001f3f,100:000000&section=footer&text=SMARTTRASH%20ULTRA%20PREMIUM&fontColor=00eaff" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:000000,100:003366&section=footer&text=SMARTTRASH%20IoT%20PROJECT&fontColor=00eaff" />
 </p>
